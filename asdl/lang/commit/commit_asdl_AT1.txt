@@ -1,0 +1,10 @@
+# define primitive fields
+var, lit, pred
+
+expr = Apply(pred predicate, arg* arguments)
+    | And(expr* arguments)
+
+arg = Name(var name)
+    | Time(var time)
+    | Path(var path)
+    | Variable(var variable)

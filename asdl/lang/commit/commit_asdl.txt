@@ -1,0 +1,7 @@
+# define primitive fields
+var, lit, pred
+
+expr = Apply(pred predicate, arg* arguments)
+    | And(expr* arguments)
+
+arg = Variable(var variable)
